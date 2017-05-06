@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Habit name : "
+            style="@style/CategoryStyle" />
+
+            <EditText
+                android:id="@+id/habit_name"
+                android:hint="hint_habit_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Habit Start Date: "
+            style="@style/CategoryStyle" />
+        <TextView
+            android:id="@+id/habit_date"
+            style="@style/EditorFieldStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="habit repetition: "
+            style="@style/CategoryStyle" />
+
+            <EditText
+                android:id="@+id/habit_repetition"
+                android:hint="hint_pet_weight"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+</LinearLayout>
